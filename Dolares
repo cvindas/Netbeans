@@ -1,0 +1,83 @@
+package cajeroautomatico;
+import javax.swing.JOptionPane;
+
+public class Dolares {
+    double SaldoDolares = 5000;
+    int Vr;
+    
+    
+    public void Retiro$(){
+    
+        
+         int OpcRetiro$;
+         
+         
+       String  Dolares = JOptionPane.showInputDialog ("Menu de Retiro \n Cuenta Dolares \n"
+            + "1. 20 \n"
+            + "2. 100\n"
+            + "3. 200\n"
+            + "4. 2000\n"
+            + "5. 1000 \n");
+        
+        OpcRetiro$ = Integer.parseInt(Dolares); 
+        
+        switch (OpcRetiro$){
+            
+            case 1:
+                Vr = 20;
+                saldo$();
+                    break;
+            case 2: 
+                Vr = 100;
+                saldo$();
+                    break;
+            case 3:
+                Vr = 200;
+                saldo$();
+                    break;
+            case 4:
+                Vr = 2000;
+                 saldo$();
+                    break;
+            case 5:
+                Vr = 1000;
+                 saldo$();
+                    break;
+            default:
+                JOptionPane.showMessageDialog(null, "La Opcion digitada no es valida \n"
+                + "Porfavor verificar la elección del menú", "Entrada invalida", 
+                JOptionPane.ERROR_MESSAGE);
+                    break;
+        
+        
+        }   
+    }
+    
+     public void Retirar$(){
+         
+       JOptionPane.showMessageDialog(null, "Usted a seleccionado la opcion retirar"); 
+       double Retirar = Integer.parseInt(JOptionPane.showInputDialog("cuanto dinero desea retirar \n"));
+       JOptionPane.showMessageDialog(null, "Usted a caba de retirar: "+Retirar);
+      SaldoDolares = SaldoDolares -Retirar;
+       JOptionPane.showMessageDialog(null, "El saldo de colones es: \n"+SaldoDolares);
+     }
+     
+     public void consultar$(){
+         
+       JOptionPane.showMessageDialog(null, "El saldo de colones es"+SaldoDolares); 
+        
+         }
+     
+      public void saldo$(){
+          
+          if (SaldoDolares>Vr){
+        SaldoDolares = SaldoDolares -Vr;
+        JOptionPane.showMessageDialog(null, "El saldo actual es de \n" + SaldoDolares); 
+      }
+        else {
+                
+           JOptionPane.showMessageDialog(null, "El saldo es insuficiente", "Error", JOptionPane.ERROR_MESSAGE );      
+       }
+}
+       
+}  
