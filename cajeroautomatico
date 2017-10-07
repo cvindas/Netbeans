@@ -1,0 +1,43 @@
+package cajeroautomatico;
+
+import javax.swing.JOptionPane;
+public class Cajeroautomatico {
+
+  
+    public static void main(String[] args) {
+   
+          int opc;
+    Opcionescajero OPCO = new Opcionescajero ();    
+    Dolares OPCO2 = new Dolares();
+           
+            
+    
+    do{ 
+          String Cajero = JOptionPane.showInputDialog("Cajero Automatico \n Menu Principal \n" 
+                  + "1. ColonesRetirar \n" 
+                  + "2. DolaresRetirar\n"
+                  + "5. Salir\n"); 
+          
+          opc = Integer.parseInt(Cajero);
+          
+        switch  (opc){
+            case 1:
+                OPCO.Retiro();
+                break;
+            case 2: 
+               OPCO2.RetiroD();
+                    break;                
+            case 5:
+                System.exit(0);
+                break;
+            
+            default:
+            break;
+        }
+           }while(true);        
+        
+           }
+
+}   
+      
+       
