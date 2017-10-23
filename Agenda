@@ -1,0 +1,49 @@
+package agenda;
+
+import javax.swing.JOptionPane;
+public class Agenda {
+
+    public static void main(String[] args) {
+     
+        
+        
+        
+    
+    
+   String UsuariosAgenda [] [] = new String [Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la cantidad de Usuarios"))][5];     
+   for (int a = 0; a < UsuariosAgenda.length;a++ ){
+            for (int x=0; x<5;x++){
+               if (x==0){
+               UsuariosAgenda [a][x] = JOptionPane.showInputDialog (null, "Usuario "+(a+1)+" : Ingrese el nombre");
+                }else if (x==1){
+                UsuariosAgenda [a][x] = JOptionPane.showInputDialog (null, "Ingrese el primer apellido");
+                }else if (x==2){
+                UsuariosAgenda [a][x] = JOptionPane.showInputDialog (null, "Ingrese el segundo apellido");
+                }else if (x==3){
+                UsuariosAgenda [a][x] = JOptionPane.showInputDialog (null, "Ingrese el numero telefonico");
+                }else if (x==4){
+                UsuariosAgenda [a][x] = JOptionPane.showInputDialog (null, "Ingrese el correo electronico");
+                }
+            }
+         }
+   
+   String xy="";
+   
+   for (int a = 0; a < UsuariosAgenda.length;a++ ){
+            for (int x=0; x<5;x++){
+               if (x==0){
+                xy+= "Usuario: "+(a+1)+ " , Nombre: "+UsuariosAgenda [a][x]+"\n";
+                }else if (x==1){
+                xy+= "Primer Apellido "+UsuariosAgenda [a][x]+"\n";
+                }else if (x==2){
+                xy+= "Segundo Apellido "+UsuariosAgenda [a][x]+"\n";
+                }else if (x==3){
+                xy+= "Numero de Telefono"+UsuariosAgenda [a][x]+"\n";
+                }else if (x==4){
+                xy+= "Correo Electronico "+UsuariosAgenda [a][x] +"\n";
+                }
+            }
+         }
+    }         
+} 
+       
