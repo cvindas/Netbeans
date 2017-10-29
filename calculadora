@@ -1,0 +1,52 @@
+package calcu;
+
+import javax.swing.JOptionPane; 
+
+class Calcu {
+
+    int opc;
+    
+    public static void main(String[] args) {
+        
+         int opc;
+       
+               
+       
+//        operaciones OPCO = new operaciones();
+        
+        do {
+            
+          opc = Integer.parseInt(JOptionPane.showInputDialog("Calculadora \n Menu Principal \n" + "1. Sumar \n" + "2. Restar\n"  + "3. Multiplicar \n" + "4.Dividir \n" + "5. Salir \n" )); 
+          
+          
+          
+        switch  (opc){
+            case 1:
+                resultado.suma();
+                    break;
+            case 2: 
+                resultado.resta();
+                    break;
+            case 3: 
+                resultado.multiplicacion();;
+                    break;
+            case 4: 
+                resultado.division();
+                    break;
+            case 5:
+                System.exit(0);
+                    break;
+            default:
+                 JOptionPane.showMessageDialog(null, "La Opcion digitada no es valida \n"
+                + "Porfavor verificar la elección del menú", "Entrada invalida", 
+                JOptionPane.ERROR_MESSAGE);
+                
+                    break;
+        }
+            
+            
+        } while (true); 
+        
+    }
+    
+}
