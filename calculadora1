@@ -1,0 +1,52 @@
+package calcu;
+
+import javax.swing.JOptionPane;
+
+
+class resultado {
+    
+ void resultado (){};
+ static String nombre= new String();
+ static int valor1;
+ static int valor2;
+ static int resul;
+ 
+ 
+ 
+ static void suma (){
+     
+     
+    resultado.valor1= Integer.parseInt(JOptionPane.showInputDialog("Digite el primer monto que desea sumar; "));
+    resultado.valor2= Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo monto que desea sumar; "));
+    resul = valor1+valor2; 
+    JOptionPane.showMessageDialog(null, "La suma es: "+ resultado.resul + "\n");
+ };    
+    
+    static void resta (){
+     
+     
+    resultado.valor1= Integer.parseInt(JOptionPane.showInputDialog("Digite el primer monto que desea restar; "));
+    resultado.valor2= Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo monto que desea restar; "));
+    resul = valor1-valor2; 
+    JOptionPane.showMessageDialog(null, "La resta es: "+ resultado.resul + "\n");
+ };  
+    
+    static void division (){
+     
+     
+    resultado.valor1= Integer.parseInt(JOptionPane.showInputDialog("Digite el primer monto que desea dividir; "));
+    resultado.valor2= Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo monto que desea dividir; "));
+    resul = valor1/valor2; 
+    JOptionPane.showMessageDialog(null, "La division es: "+ resultado.resul + "\n");
+ };  
+    
+    
+    static void multiplicacion (){
+     
+     
+    resultado.valor1= Integer.parseInt(JOptionPane.showInputDialog("Digite el primer monto que desea multiplicar; "));
+    resultado.valor2= Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo monto que desea multiplicar; "));
+    resul = valor1*valor2; 
+    JOptionPane.showMessageDialog(null, "La multiplicacion es: "+ resultado.resul + "\n");
+ };  
+}
