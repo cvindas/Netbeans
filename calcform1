@@ -1,0 +1,282 @@
+package principal;
+
+
+public class ventana extends javax.swing.JFrame {
+
+    
+    public ventana() {
+        initComponents();
+    }
+
+   
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        Suma = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        val1 = new javax.swing.JTextField();
+        Resta = new javax.swing.JButton();
+        Mutiplicacion = new javax.swing.JButton();
+        Division = new javax.swing.JButton();
+        val2 = new javax.swing.JTextField();
+        var3 = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Suma.setText("Suma");
+        Suma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SumaMouseClicked(evt);
+            }
+        });
+        Suma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SumaActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Calculadora");
+
+        val1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                val1ActionPerformed(evt);
+            }
+        });
+
+        Resta.setText("Resta");
+        Resta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RestaMouseClicked(evt);
+            }
+        });
+        Resta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RestaActionPerformed(evt);
+            }
+        });
+
+        Mutiplicacion.setText("Multiplicacion");
+        Mutiplicacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MutiplicacionMouseClicked(evt);
+            }
+        });
+        Mutiplicacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MutiplicacionActionPerformed(evt);
+            }
+        });
+
+        Division.setText("Division");
+        Division.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DivisionMouseClicked(evt);
+            }
+        });
+        Division.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DivisionActionPerformed(evt);
+            }
+        });
+
+        val2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                val2ActionPerformed(evt);
+            }
+        });
+
+        var3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                var3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(48, 48, 48)
+                            .addComponent(val1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(157, 157, 157)
+                            .addComponent(val2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(21, 21, 21))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(154, 154, 154)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(Suma)
+                                .addGap(18, 18, 18)
+                                .addComponent(Resta)
+                                .addGap(21, 21, 21)
+                                .addComponent(Mutiplicacion)
+                                .addGap(26, 26, 26)
+                                .addComponent(Division))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(150, 150, 150)
+                        .addComponent(var3, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel1)
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(val1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(val2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(var3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Suma)
+                    .addComponent(Resta)
+                    .addComponent(Mutiplicacion)
+                    .addComponent(Division))
+                .addGap(58, 58, 58))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    
+  
+    private void SumaActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+       
+      
+    }                                    
+
+    private void val1ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+        
+    }                                    
+
+    private void MutiplicacionActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        // TODO add your handling code here:
+
+    }                                             
+
+    private void SumaMouseClicked(java.awt.event.MouseEvent evt) {                                  
+        // TODO add your handling code here:
+    int valor1; 
+    int valor2;
+    int result; 
+    
+    valor1 = Integer.parseInt(val1.getText());
+    valor2 = Integer.parseInt(val2.getText());
+    result = valor1 + valor2;
+    
+    this.var3.setText(String.valueOf(result));
+    }                                 
+
+    private void RestaActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        
+    }                                     
+
+    private void DivisionActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+       
+    }                                        
+
+    private void val2ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+         
+    }                                    
+
+    private void var3ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+       
+    }                                    
+
+    private void RestaMouseClicked(java.awt.event.MouseEvent evt) {                                   
+        // TODO add your handling code here:
+         int valor1; 
+    int valor2;
+    int result; 
+    
+    valor1 = Integer.parseInt(val1.getText());
+    valor2 = Integer.parseInt(val2.getText());
+    result = valor1 - valor2;
+    
+    this.var3.setText(String.valueOf(result));
+    }                                  
+
+    private void MutiplicacionMouseClicked(java.awt.event.MouseEvent evt) {                                           
+        // TODO add your handling code here:
+         int valor1; 
+    int valor2;
+    int result; 
+    
+    valor1 = Integer.parseInt(val1.getText());
+    valor2 = Integer.parseInt(val2.getText());
+    result = valor1 * valor2;
+    
+    this.var3.setText(String.valueOf(result));
+    }                                          
+
+    private void DivisionMouseClicked(java.awt.event.MouseEvent evt) {                                      
+        // TODO add your handling code here:
+         int valor1; 
+    int valor2;
+    int result; 
+    
+    valor1 = Integer.parseInt(val1.getText());
+    valor2 = Integer.parseInt(val2.getText());
+    result = valor1 / valor2;
+    
+    this.var3.setText(String.valueOf(result));
+    }                                     
+
+   
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new ventana().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton Division;
+    private javax.swing.JButton Mutiplicacion;
+    private javax.swing.JButton Resta;
+    private javax.swing.JButton Suma;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField val1;
+    private javax.swing.JTextField val2;
+    private javax.swing.JTextField var3;
+    // End of variables declaration                   
+}
